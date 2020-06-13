@@ -28,6 +28,8 @@ self.addEventListener('activate', function(event) {
   return self.clients.claim();
 });
 
+
+
 // self.addEventListener('activate', function(event) {
 //   console.log('[Service Worker] Activating Service Worker ....', event);
 //   event.waitUntil(
@@ -57,7 +59,7 @@ self.addEventListener('fetch', (event) => {
         return response;
       });
     }).catch(() => {
-      return caches.match('/index.html');
+      return caches.match('/offline.html');
     })
   );
 });
