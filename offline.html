@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <meta name="description" content="Proyek MOBWEB untuk menampilkan film yang sedang trending dan untuk melakukan pencarian nama film yang diinginkan">
+ <title>You Are Offline</title>
+ <meta name="description" content="Proyek MOBWEB untuk menampilkan film yang sedang trending dan untuk melakukan pencarian nama film yang diinginkan">
     <meta charset="utf-8">
     <meta name="theme-color" content="#317EFB"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Offline</title>
 <!--     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
@@ -29,16 +29,46 @@
         }
         body{
             background-image: url("source/dayne-topkin-4jjSan_VD8k-unsplash.jpg");
-            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            width: 99vw;
+            height: 50vh;
         }
-
-
     </style>
 </head>
 <body>
+  
+    <div class="container-fluid">
+    	<div class="row mt-5"></div>
+    	<div class="row mt-5"></div>
+    	<div class="row mt-5"></div>
+    	<div class="row mt-5"></div>
 
-	<h5>You Are Offline</h5>
+        <div class="row mt-5">
+            <div class="col-md-1"></div>
+                <div class="col-md-10">
+                	<div class="row text-center">
+                		<div class="col-md-3"></div>
+                		<div class="col-md-6">
+                			<div class="card">
+                				<div class="card-header">
+                					<h3>Error 404</h3>
+                				</div>
+                				<div class="card-body">
+                					<h4>You Are Offline</h4>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="col-md-3"></div>
+                		
+                	</div>
+                   
+                </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
 
-	<script src = "script/index.js"></script>
 </body>
 </html>

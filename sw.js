@@ -5,7 +5,8 @@ self.addEventListener('install', function(event) {
     .then(function(cache) {
       console.log('[Service Worker] Precaching App Shell');
       return cache.addAll([
-        '/index.html'
+        '/index.html',
+        '/offline.html'
       ])
     })
   )
@@ -27,8 +28,6 @@ self.addEventListener('activate', function(event) {
   );
   return self.clients.claim();
 });
-
-
 
 // self.addEventListener('activate', function(event) {
 //   console.log('[Service Worker] Activating Service Worker ....', event);
@@ -59,6 +58,7 @@ self.addEventListener('fetch', (event) => {
         return response;
       });
     }).catch(() => {
+      console.log('ini belum ada inet');
       return caches.match('/offline.html');
     })
   );
